@@ -1,6 +1,6 @@
 ---
-language: java
-contributors:
+jazyk: java
+přispěvatelé:
     - ["Jake Prather", "http://github.com/JakeHP"]
     - ["Jakukyo Friel", "http://weakish.github.io"]
     - ["Madison Dickson", "http://github.com/mix3d"]
@@ -8,70 +8,70 @@ contributors:
     - ["Zachary Ferguson", "http://github.com/zfergus2"]
     - ["Cameron Schermerhorn", "http://github.com/cschermerhorn"]
     - ["Rachel Stiyer", "https://github.com/rstiyer"]
-filename: LearnJava.java
+název souboru: LearnJava.java
 ---
 
-Java is a general-purpose, concurrent, class-based, object-oriented computer
-programming language.
-[Read more here.](http://docs.oracle.com/javase/tutorial/java/)
+Java is a general-purpose, concurrent, class-based, objekotově-orientovaný 
+programovací jazyk.
+[více zde.](http://docs.oracle.com/javase/tutorial/java/)
 
 ```java
-// Single-line comments start with //
+// Jednořádkové komentáře začínají  //
 
 /*
-Multi-line comments look like this.
+Víceřadkové vypadjí takhle.
 */
 
 /**
-JavaDoc comments look like this. Used to describe the Class or various
-attributes of a Class.
+JavaDoc komentáře vypadjaí takhle.Používají se k vysvětlení třídy nebo různých atributů třídy. 
 */
 
-// Import ArrayList class inside of the java.util package
-import java.util.ArrayList;
-// Import all classes inside of java.security package
-import java.security.*;
+// Nahraní generické kolekce třídy uvnitř java.util balíček import java.util.ArrayList; 
 
-// Each .java file contains one outer-level public class, with the same name
-// as the file.
+// Nahraní všech tříd uvnitř java.security balíčku import java.security.*; 
+
+// Každý .java soubor obsahuje jednu vnější úroveň veřejné třídy, se stejným názvem. 
+// jako soubor.
 public class LearnJava {
 
-    // In order to run a java program, it must have a main method as an entry 
-    // point.
+    //
+    Aby běžel java Program, musí mít hlavní metodu jako vstup 
+    // point??.
     public static void main (String[] args) {
 
-        // Use System.out.println() to print lines.
+        // 
+    Použijte System.out.println () pro tisk řádků  .
         System.out.println("Hello World!");
         System.out.println(
             "Integer: " + 10 +
             " Double: " + 3.14 +
             " Boolean: " + true);
 
-        // To print without a newline, use System.out.print().
+        // Chcete-li tisknout bez nového řádku, použijte System.out.print().
         System.out.print("Hello ");
         System.out.print("World");
 
-        // Use System.out.printf() for easy formatted printing.
+        // Použijte System.out.printf() pro snadný formátovaný tisk.
         System.out.printf("pi = %.5f", Math.PI); // => pi = 3.14159
 
         ///////////////////////////////////////
-        // Variables
+        //Proměnné
         ///////////////////////////////////////
 
         /*
-        *  Variable Declaration
+        *  Deklerace proměných
         */
-        // Declare a variable using <type> <name>
+        // Deklerace proměnných použitím  <type> <name>
         int fooInt;
-        // Declare multiple variables of the same 
-        // type <type> <name1>, <name2>, <name3>
+        // Deklerace více proměnných stejného typu. 
+        // typ <type> <name1>, <name2>, <name3>
         int fooInt1, fooInt2, fooInt3;
 
         /*
-        *  Variable Initialization
+        *  Inicializace proměnných
         */
 
-        // Initialize a variable using <type> <name> = <val>
+        // Inicializujeme proměnné pomocí <type> <name> = <val>
         int fooInt = 1;
         // Initialize multiple variables of same type with same 
         // value <type> <name1>, <name2>, <name3> = <val>
