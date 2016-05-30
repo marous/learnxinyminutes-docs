@@ -1,6 +1,6 @@
 ---
 jazyk: java
-contributors:
+přispěvatelé:
     - ["Jake Prather", "http://github.com/JakeHP"]
     - ["Jakukyo Friel", "http://weakish.github.io"]
     - ["Madison Dickson", "http://github.com/mix3d"]
@@ -8,98 +8,100 @@ contributors:
     - ["Zachary Ferguson", "http://github.com/zfergus2"]
     - ["Cameron Schermerhorn", "http://github.com/cschermerhorn"]
     - ["Rachel Stiyer", "https://github.com/rstiyer"]
-filename: LearnJava.java
+název souboru: LearnJava.java
 ---
-dfgdfgdfgd
-Java is a general-purpose, concurrent, class-based, object-oriented computer
-programming language.
-[Read more here.](http://docs.oracle.com/javase/tutorial/java/)
+
+Java je univerzální, souběžně, třída na bázi, objektově orientované počítačového
+programovacího jazyka.
+[Více informací zde.](http://docs.oracle.com/javase/tutorial/java/)
 
 ```java
-// Single-line comments start with //
-gdfgdfsgd
+// Jednořádkové komentáře začínají  //
+
 /*
-Multi-line comments look like this.
+Víceřádkové komentáře vypadají takto.
 */
 gdfg
 /**
-JavaDoc comments look like this. Used to describe the Class or various
-attributes of a Class.
+Javadoc komentáře vypadají následovně. Používá se k popisu třídy nebo různých
+atributů třídy.
 */
 
-// Import ArrayList class inside of the java.util package
+// 
+třída import ArrayList uvnitř java.util balíčku
 import java.util.ArrayList;
-// Import all classes inside of java.security package
+// Import všech tříd uvnitř java.security balíčku
 import java.security.*;
 
-// Each .java file contains one outer-level public class, with the same name
-// as the file.
+// Každý soubor .java obsahuje jeden vnější úrovně veřejné třídy, se stejným názvem
+// jako soubor .
 public class LearnJava {
 
-    // In order to run a java program, it must have a main method as an entry 
-    // point.
+    // Aby bylo možné spustit java program, musí mít hlavní metodu jako vstup
+     // bod.
     public static void main (String[] args) {
 
-        // Use System.out.println() to print lines.
+        // Použijte System.out.println() pro tisk řádků.
         System.out.println("Hello World!");
         System.out.println(
             "Integer: " + 10 +
             " Double: " + 3.14 +
             " Boolean: " + true);
 
-        // To print without a newline, use System.out.print().
+        // Chcete-li tisknout bez nového řádku, použijte System.out.print().
         System.out.print("Hello ");
         System.out.print("World");
 
-        // Use System.out.printf() for easy formatted printing.
+        // Použijte System.out.printf () pro jednoduchý formátovaný tisk.
         System.out.printf("pi = %.5f", Math.PI); // => pi = 3.14159
 
         ///////////////////////////////////////
-        // Variables
+        // proměnné
         ///////////////////////////////////////
 
         /*
-        *  Variable Declaration
+        * Deklerace promenných 
         */
-        // Declare a variable using <type> <name>
+        //Deklerace proměnných užitím  <type> <name>
         int fooInt;
-        // Declare multiple variables of the same 
-        // type <type> <name1>, <name2>, <name3>
+        // Deklerace mnohonásobných proměnných stejného 
+        //  typu <type> <name1>, <name2>, <name3>
         int fooInt1, fooInt2, fooInt3;
 
         /*
-        *  Variable Initialization
+        *  Inicializace proměnných
         */
 
-        // Initialize a variable using <type> <name> = <val>
+        // Inicializace proměnných použitím<type> <name> = <val>
         int fooInt = 1;
-        // Initialize multiple variables of same type with same 
-        // value <type> <name1>, <name2>, <name3> = <val>
+        // Inicializace více proměnných stejného typu s stejnou
+        // hodnotou <type> <name1>, <name2>, <name3> = <val>
         int fooInt1, fooInt2, fooInt3;
         fooInt1 = fooInt2 = fooInt3 = 1;
 
         /*
-        *  Variable types
+        * typy proměnných
         */
-        // Byte - 8-bit signed two's complement integer
+        // Byte - 8-bitové celé číslo dvojkového typu ????????????????????
         // (-128 <= byte <= 127)
         byte fooByte = 100;
 
-        // Short - 16-bit signed two's complement integer
+        // Short - 16-bitové celé číslo dvojkového integer????????????????????????????????
+        
         // (-32,768 <= short <= 32,767)
         short fooShort = 10000;
 
-        // Integer - 32-bit signed two's complement integer
+        // Integer - 32-bit signed two's complement integer??????????????????????????????
         // (-2,147,483,648 <= int <= 2,147,483,647)
         int fooInt = 1;
 
-        // Long - 64-bit signed two's complement integer
+        // Long - 64-bit signed two's complement integer???????????????????????????
         // (-9,223,372,036,854,775,808 <= long <= 9,223,372,036,854,775,807)
         long fooLong = 100000L;
-        // L is used to denote that this variable value is of type Long;
-        // anything without is treated as integer by default.
+        // L se používá k označení, že tato proměnná hodnota je typu Long;
+        // cokoli bez je považováno za celé číslo jako výchozí.
 
-        // Note: Java has no unsigned types.
+        // Note: Java nemá typy bez znaménka.
 
         // Float - Single-precision 32-bit IEEE 754 Floating Point
         // 2^-149 <= float <= (2-2^-23) * 2^127
