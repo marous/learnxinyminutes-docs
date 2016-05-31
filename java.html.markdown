@@ -21,7 +21,7 @@ programovacího jazyka.
 /*
 Víceřádkové komentáře vypadají takto.
 */
-gdfg
+
 /**
 Javadoc komentáře vypadají následovně. Používá se k popisu třídy nebo různých
 atributů třídy.
@@ -82,20 +82,20 @@ public class LearnJava {
         /*
         * typy proměnných
         */
-        // Byte - 8-bitové celé číslo dvojkového typu ????????????????????
+        // Byte - 8-bitové celé číslo dvojkového typu 
         // (-128 <= byte <= 127)
         byte fooByte = 100;
 
-        // Short - 16-bitové celé číslo dvojkového integer????????????????????????????????
+        // Short - 16-bitové celé číslo dvojkového typu
         
         // (-32,768 <= short <= 32,767)
         short fooShort = 10000;
 
-        // Integer - 32-bit signed two's complement integer??????????????????????????????
+        // Integer - celé číslo 32-bitové dvojkového doplňku
         // (-2,147,483,648 <= int <= 2,147,483,647)
         int fooInt = 1;
 
-        // Long - 64-bit signed two's complement integer???????????????????????????
+        // Long - 64-bitové celé číslo dvojkového doplňku
         // (-9,223,372,036,854,775,808 <= long <= 9,223,372,036,854,775,807)
         long fooLong = 100000L;
         // L se používá k označení, že tato proměnná hodnota je typu Long;
@@ -103,26 +103,26 @@ public class LearnJava {
 
         // Note: Java nemá typy bez znaménka.
 
-        // Float - Single-precision 32-bit IEEE 754 Floating Point
+        // Float - Jednoduchou přesností 32-bitový IEEE 754 pohyblivou řadovou čarkou Point 
         // 2^-149 <= float <= (2-2^-23) * 2^127
         float fooFloat = 234.5f;
-        // f or F is used to denote that this variable value is of type float;
+        // f or F se používá k označení, že tato proměnná hodnota je typu float;
         // otherwise it is treated as double.
 
-        // Double - Double-precision 64-bit IEEE 754 Floating Point
+        // Double - S dvojitou přesností 64-bitový IEEE 754 pohyblivou řadovou čarkou Point
         // 2^-1074 <= x <= (2-2^-52) * 2^1023
         double fooDouble = 123.4;
 
-        // Boolean - true & false
+        // boolean - true & false
         boolean fooBoolean = true;
         boolean barBoolean = false;
 
-        // Char - A single 16-bit Unicode character
+        // Char - Jeden 16-bitový Unicode znak
         char fooChar = 'A';
 
-        // final variables can't be reassigned to another object,
+        // finální proměnné nemůžou být přeřazeny do jiného objektu,
         final int HOURS_I_WORK_PER_WEEK = 9001;
-        // but they can be initialized later.
+        // ale mohou být inicializovány později.
         final double E;
         E = 2.71828;
 
