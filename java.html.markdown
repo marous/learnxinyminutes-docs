@@ -126,81 +126,81 @@ public class LearnJava {
         final double E;
         E = 2.71828;
 
-        // BigInteger - Immutable arbitrary-precision integers
+        // BigInteger -Nezměnitelně libovolná-přesná celá čísla
         //
-        // BigInteger is a data type that allows programmers to manipulate
-        // integers longer than 64-bits. Integers are stored as an array of
-        // of bytes and are manipulated using functions built into BigInteger
+        // BigInteger je datový typ, který umožňuje programátorům manipulovat
+        // celá čísla větší než 64 bitů. Celá čísla jsou uloženy jako soubor
+        // bajtů a jsou manipulovány pomocí funkcí zabudovaných do BigInteger
         //
-        // BigInteger can be initialized using an array of bytes or a string.        
+        // BigInteger mohou být inicializovány pomocí pole bajtů nebo řetězeců.      
         BigInteger fooBigInteger = new BigInteger(fooByteArray);
 
-        // BigDecimal - Immutable, arbitrary-precision signed decimal number
+        // BigDecimal - Immutable, arbitrary-precision signed decimal number???????????nechapu výzanm??????????
         //
         // A BigDecimal takes two parts: an arbitrary precision integer 
-        // unscaled value and a 32-bit integer scale
+        // unscaled value and a 32-bit integer scale??????????
         //
-        // BigDecimal allows the programmer complete control over decimal
-        // rounding. It is recommended to use BigDecimal with currency values
-        // and where exact decimal precision is required.
+        // BigDecimal dovolí programátorovi úplnou kontrolu nad desetinná
+        // zaokrouhlování. Doporučuje se používat BigDecimal s hodnotami měn
+        // a kde se vyžaduje přesný počet desetinných míst.
         //
         // BigDecimal can be initialized with an int, long, double or String
         // or by initializing the unscaled value (BigInteger) and scale (int).
         BigDecimal fooBigDecimal = new BigDecimal(fooBigInteger, fooInt);
         
-        // Be wary of the constructor that takes a float or double as
-        // the inaccuracy of the float/double will be copied in BigDecimal.
-        // Prefer the String constructor when you need an exact value.
+        // Dávejte si pozor na konstruktor, který bere float nebo double jako
+        // nepřesnost float / double bude zkopírována do BigDecimal.
+        //Preferujte řetězec konstruktoru, kdy budete potřebovat přesné hodnoty.
         BigDecimal tenCents = new BigDecimal("0.1");
 
-        // Strings
+        // Řetězce
         String fooString = "My String Is Here!";
 
-        // \n is an escaped character that starts a new line
+        // \n je uniklý znak, který začíná nový řádek
         String barString = "Printing on a new line?\nNo Problem!";
-        // \t is an escaped character that adds a tab character
+        // \t je uniklý znak, který přidává znak tabulátoru
         String bazString = "Do you want to add a tab?\tNo Problem!";
         System.out.println(fooString);
         System.out.println(barString);
         System.out.println(bazString);
 
-        // Arrays
-        // The array size must be decided upon instantiation
-        // The following formats work for declaring an array
+        // pole
+        // Velikost pole musí být rozhodnuta vytvořením instance
+        // Následující formáty pracují pro deklarování pole
         // <datatype>[] <var name> = new <datatype>[<array size>];
         // <datatype> <var name>[] = new <datatype>[<array size>];
         int[] intArray = new int[10];
         String[] stringArray = new String[1];
         boolean boolArray[] = new boolean[100];
 
-        // Another way to declare & initialize an array
+        // Další způsob, jak deklarovat a inicializovat pole
         int[] y = {9000, 1000, 1337};
         String names[] = {"Bob", "John", "Fred", "Juan Pedro"};
         boolean bools[] = {true, false, false};
 
-        // Indexing an array - Accessing an element
+        // Indexování pole - přístupový prvek
         System.out.println("intArray @ 0: " + intArray[0]);
 
-        // Arrays are zero-indexed and mutable.
+        // Pole jsou nulově indexované a proměnlivé.
         intArray[1] = 1;
         System.out.println("intArray @ 1: " + intArray[1]); // => 1
 
-        // Other data types worth checking out
-        // ArrayLists - Like arrays except more functionality is offered, and
-        //              the size is mutable.
-        // LinkedLists - Implementation of doubly-linked list. All of the
-        //               operations perform as could be expected for a
-        //               doubly-linked list.
-        // Maps - A set of objects that map keys to values. Map is
-        //        an interface and therefore cannot be instantiated.
-        //        The type of keys and values contained in a Map must
-        //        be specified upon instantiation of the implementing
-        //        class. Each key may map to only one corresponding value,
-        //        and each key may appear only once (no duplicates).
-        // HashMaps - This class uses a hashtable to implement the Map
-        //            interface. This allows the execution time of basic
-        //            operations, such as get and insert element, to remain
-        //            constant even for large sets.
+        // Jiné typy dat stojí za prozkoumání
+        // ArrayLists - jsou jako pole s výjimkou více funkcí je k dispozici, a
+        //             a velikost je proměnlivá.
+        // LinkedLists - Realizace dvojitě propojenýho seznamu. Všechny
+        //               operace fungoují tak, jak by mohlo být očekávano pro
+        //                dvojitě propojený seznam.
+        // Maps - Sada objektů, které mapují klíče k hodnotám. mapa je
+        //        an interface and therefore cannot be instantiated.????????????????????????
+        //        Typ klíče a hodnoty obsažené v mapě musí
+        //        být určen při vytvoření instance prováděcí
+        //        třídy. Každý klíč může mapovat pouze na jednu odpovídající hodnotu,
+        //        a každý klíč se může objevit pouze jednou (bez duplikátů).
+        // HashMaps - Tato třída používá hash tabulky pro realizaci rozhrání
+        //            map. To umožňuje dobu zpracování základních
+        //            operací, jako je získat a vložit prvek, zůstane
+        //            konstantní i pro rozsáhlé sady.
 
         ///////////////////////////////////////
         // Operators
