@@ -324,7 +324,7 @@ public class LearnJava {
         // Spínač pracuje s byty, short, char a datovými typy int.
         // Spolupracuje také s vyjmenovanými typy (popsáno v ENUM), 
         // třída String a pár speciálních tříd které obalují primitivní typy:
-        // Character, Byte, Short, and Integer.
+        // Character, Byte, Short, a Integer.
         int month = 3;
         String monthString;
         switch (month) {
@@ -339,7 +339,7 @@ public class LearnJava {
         }
         System.out.println("Switch Case Result: " + monthString);
         
-        // Starting in Java 7 and above, switching Strings works like this:
+        // Spouštění v Javě 7 a výše, přepínání Stringů funguje takhle:
         String myAnswer = "maybe";
         switch(myAnswer) {
             case "yes":
@@ -356,7 +356,7 @@ public class LearnJava {
                 break;
         }
 
-        // Conditional Shorthand
+        // podmínečný zkrácený zápis
         // You can use the '?' operator for quick assignments or logic forks.
         // Reads as "If (statement) is true, use <first value>, otherwise, use
         // <second value>"
