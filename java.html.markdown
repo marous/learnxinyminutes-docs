@@ -203,13 +203,13 @@ public class LearnJava {
         //            konstantní i pro rozsáhlé sady.
 
         ///////////////////////////////////////
-        // Operators
+        // operátory
         ///////////////////////////////////////
         System.out.println("\n->Operators");
 
-        int i1 = 1, i2 = 2; // Shorthand for multiple declarations
+        int i1 = 1, i2 = 2; // Zkrácený zápis pro více deklarací
 
-        // Arithmetic is straightforward
+        // Aritmetika je přímočará
         System.out.println("1+2 = " + (i1 + i2)); // => 3
         System.out.println("2-1 = " + (i2 - i1)); // => 1
         System.out.println("2*1 = " + (i2 * i1)); // => 2
@@ -219,7 +219,7 @@ public class LearnJava {
         // Modulo
         System.out.println("11%3 = "+(11 % 3)); // => 2
 
-        // Comparison operators
+        // operátory porovnání
         System.out.println("3 == 2? " + (3 == 2)); // => false
         System.out.println("3 != 2? " + (3 != 2)); // => true
         System.out.println("3 > 2? " + (3 > 2)); // => true
@@ -227,39 +227,39 @@ public class LearnJava {
         System.out.println("2 <= 2? " + (2 <= 2)); // => true
         System.out.println("2 >= 2? " + (2 >= 2)); // => true
 
-        // Boolean operators
+        // logické operátory
         System.out.println("3 > 2 && 2 > 3? " + ((3 > 2) && (2 > 3))); // => false
         System.out.println("3 > 2 || 2 > 3? " + ((3 > 2) || (2 > 3))); // => true
         System.out.println("!(3 == 2)? " + (!(3 == 2))); // => true
 
-        // Bitwise operators!
+        // Bitové operátory!
         /*
-        ~      Unary bitwise complement
-        <<     Signed left shift
-        >>     Signed/Arithmetic right shift
-        >>>    Unsigned/Logical right shift
-        &      Bitwise AND
-        ^      Bitwise exclusive OR
-        |      Bitwise inclusive OR
+        ~      Unární bitový doplněk
+        <<     Podepsáný levý shift????????????????????????????????????????????Signed left shift
+        >>     Podepsáný / Aritmeticky pravý shift????????????Signed/Arithmetic right shift
+        >>>    Nepodepsané / Logický posun vpravo
+        &      bitový operátor AND
+        ^      exkluzivní bitový operátor exkluzivní OR
+        |     inkluzivní bitový operátor OR
         */
 
-        // Increment operators
+        // operátory Inkrementace
         int i = 0;
         System.out.println("\n->Inc/Dec-rementation");
-        // The ++ and -- operators increment and decrement by 1 respectively.
-        // If they are placed before the variable, they increment then return;
-        // after the variable they return then increment.
+        // ++ a -- operátory přírůstku a úbytku o 1.
+        // Pokud jsou umístěny před proměnné, oni zvýši pak vratí;
+        // Po návratu proměnné následně zvýší.
         System.out.println(i++); // i = 1, prints 0 (post-increment)
         System.out.println(++i); // i = 2, prints 2 (pre-increment)
         System.out.println(i--); // i = 1, prints 2 (post-decrement)
         System.out.println(--i); // i = 0, prints 0 (pre-decrement)
 
         ///////////////////////////////////////
-        // Control Structures
+        // řídicí struktury
         ///////////////////////////////////////
         System.out.println("\n->Control Structures");
 
-        // If statements are c-like
+        // pokud jsou výroky c-like
         int j = 10;
         if (j == 10) {
             System.out.println("I get printed");
@@ -269,7 +269,7 @@ public class LearnJava {
             System.out.println("I also don't");
         }
 
-        // While loop
+        // while loop
         int fooWhile = 0;
         while(fooWhile < 100) {
             System.out.println(fooWhile);
@@ -297,7 +297,7 @@ public class LearnJava {
         }
         System.out.println("fooFor Value: " + fooFor);
         
-        // Nested For Loop Exit with Label
+        // Nested For Loop Exit with Label?????????????
         outer:
         for (int i = 0; i < 10; i++) {
           for (int j = 0; j < 10; j++) {
@@ -308,22 +308,22 @@ public class LearnJava {
           }
         }
         
-        // For Each Loop
-        // The for loop is also able to iterate over arrays as well as objects
-        // that implement the Iterable interface.
+        // pro každý cyklus
+        // Cyklus for je také schopen projit pole, stejně jako objekty
+        // které realizuje rozhraní Iterable.
         int[] fooList = {1, 2, 3, 4, 5, 6, 7, 8, 9};
-        // for each loop structure => for (<object> : <iterable>)
-        // reads as: for each element in the iterable
-        // note: the object type must match the element type of the iterable.
+        // pro každou strukturu cyklu => for (<object> : <iterable>)
+        // čte jako:  pro každý prvek v iterable
+        // Poznámka: typ objektu musí odpovídat typu prvku v iterable.
         for (int bar : fooList) {
             System.out.println(bar);
             //Iterates 9 times and prints 1-9 on new lines
         }
 
         // Switch Case
-        // A switch works with the byte, short, char, and int data types.
-        // It also works with enumerated types (discussed in Enum Types), the
-        // String class, and a few special classes that wrap primitive types:
+        // Spínač pracuje s byty, short, char a datovými typy int.
+        // Spolupracuje také s vyjmenovanými typy (popsáno v ENUM), 
+        // třída String a pár speciálních tříd které obalují primitivní typy:
         // Character, Byte, Short, and Integer.
         int month = 3;
         String monthString;
