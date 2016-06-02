@@ -429,40 +429,40 @@ public class LearnJava {
         // To funguje nejen pro sbírky, funguje to pro všechny
         // ne finální třídy.
 
-    } // End main method
-} // End LearnJava class
+    } // Konec hlavní metody
+} // Konec LearnJava třídy
 
-// You can include other, non-public outer-level classes in a .java file,
-// but it is not good practice. Instead split classes into separate files.
+// Můžete zahrnovat jiné, neveřejné třídy vnější úrovně v souboru .java,
+// ale není to dobrým zvykem. Místo toho rozdělit třídy do samostatných souborů.
 
-// Class Declaration Syntax:
+// Třída Deklarace Syntaxe:
 // <public/private/protected> class <class name> {
-//    // data fields, constructors, functions all inside.
-//    // functions are called as methods in Java.
+//    // datová pole, konstruktory, funkce vše uvnitř.
+//    // Funkce jsou nazývány jako metody v Javě.
 // }
 
 class Bicycle {
 
-    // Bicycle's Fields/Variables
-    public int cadence; // Public: Can be accessed from anywhere
-    private int speed;  // Private: Only accessible from within the class
-    protected int gear; // Protected: Accessible from the class and subclasses
-    String name; // default: Only accessible from within this package
-    static String className; // Static class variable
+    // cyklistovo pole / proměnné
+    public int cadence; // Public: Lze přistupovat odkudkoliv
+    private int speed;  // Private: přístupné pouze zevnitř třídy
+    protected int gear; // Protected: Přístupné ze třídy a podtřídy
+    String name; // default: přístupné pouze z tohoto balíčku
+    static String className; // Static proměná třídy
 
     // Static block 
-    // Java has no implementation of static constructors, but
-    // has a static block that can be used to initialize class variables 
-    // (static variables). 
-    // This block will be called when the class is loaded.
+    // Java nemá žádnou implementaci statických konstruktorů, ale
+    // má statický blok, který může být použit pro inicializaci proměnné třídy
+    // (staticlé proměné). 
+    // Tento blok bude volán při načtení třídy.
     static {
         className = "Bicycle";
     }
 
-    // Constructors are a way of creating classes
-    // This is a constructor
+    // Konstruktory jsou způsoby vytváření tříd
+    // Tohle je konstruktor
     public Bicycle() {
-        // You can also call another constructor:
+        // Můžete také volat jiný konstruktor:
         // this(1, 50, 5, "Bontrager");
         gear = 1;
         cadence = 50;
