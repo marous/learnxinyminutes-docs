@@ -357,56 +357,56 @@ public class LearnJava {
         }
 
         // podmínečný zkrácený zápis
-        // You can use the '?' operator for quick assignments or logic forks.
-        // Reads as "If (statement) is true, use <first value>, otherwise, use
-        // <second value>"
+        // Můžete použít '?' Operátor pro rychlé zadání nebo logický vidlice.
+        // Čte jako "If (tvrzení) je pravdivé, použijte <první hodnoty>, jinak využijte
+        // <druhou hodnotou>"
         int foo = 5;
         String bar = (foo < 10) ? "A" : "B";
-        System.out.println(bar); // Prints A, because the statement is true
+        System.out.println(bar); // Vypíše A, protože tvrzení je pravdivé
 
         ////////////////////////////////////////
-        // Converting Data Types And Typecasting
+        // Převedení Datových typů a přetypování
         ////////////////////////////////////////
 
-        // Converting data
+        // Převedení dat
 
-        // Convert String To Integer
-        Integer.parseInt("123");//returns an integer version of "123"
+        // Převdení řetězece na celé číslo
+        Integer.parseInt("123");// Vrátí celé číslo verze"123"
 
-        // Convert Integer To String
+        // Převdení celého čísla na řetězec
         Integer.toString(123);//returns a string version of 123
 
-        // For other conversions check out the following classes:
+        // U ostatních konverzí vyzkoušejte následující třídy:
         // Double
         // Long
         // String
 
         // Typecasting
-        // You can also cast Java objects, there's a lot of details and deals
-        // with some more intermediate concepts. Feel free to check it out here:
+        // Můžete také obsadit Java objekty, je tu spousta detailů a nabídek
+        // s některými více zprostředkujícími koncepty. Neváhejte a zkontrolujte si to tady:
         // http://docs.oracle.com/javase/tutorial/java/IandI/subclasses.html
 
         ///////////////////////////////////////
-        // Classes And Functions
+        // Třídy a funkce
         ///////////////////////////////////////
 
         System.out.println("\n->Classes & Functions");
 
-        // (definition of the Bicycle class follows)
+        // (Definice třídy Bicycle následovně)
 
-        // Use new to instantiate a class
+        // Použijte new pro inicializaci třídy
         Bicycle trek = new Bicycle();
 
-        // Call object methods
+        // Volání metody objektů
         trek.speedUp(3); // You should always use setter and getter methods
         trek.setCadence(100);
 
-        // toString returns this Object's string representation.
+        // toString vrací řetězcové vyjádření tohoto objektu.
         System.out.println("trek info: " + trek.toString());
 
-        // Double Brace Initialization
-        // The Java Language has no syntax for how to create static Collections
-        // in an easy way. Usually you end up in the following way:
+        // Double Brace Inicializace
+        // jazyk Java nemá synatxi pro jak vytvořit statické kolekce 
+        // jednoduchým způsobem. Obvykle skončí následovně:
         private static final Set<String> COUNTRIES = new HashSet<String>();
         static {
            COUNTRIES.add("DENMARK");
@@ -414,20 +414,20 @@ public class LearnJava {
            COUNTRIES.add("FINLAND");
         }
 
-        // But there's a nifty way to achieve the same thing in an
-        // easier way, by using something that is called Double Brace
-        // Initialization.
+        // Ale je tu fajnový způsob dosažení stejně věci s
+        // snáze, pomocí něčeho co se jmenuje Double Brace
+        // inicializace.
         private static final Set<String> COUNTRIES = new HashSet<String>() {{
             add("DENMARK");
             add("SWEDEN");
             add("FINLAND");
         }}
 
-        // The first brace is creating a new AnonymousInnerClass and the
-        // second one declares an instance initializer block. This block
-        // is called when the anonymous inner class is created.
-        // This does not only work for Collections, it works for all
-        // non-final classes.
+        // První závorka je vytvoření nového AnonymousInnerClass a
+        // druhá deklaruje instance Inicializátor blok. Tento blok second one declares an instance initializer block. This block???????????????????????????????????????????????????????????????????????????????????????
+        // je volán, když je vytvořena anonymní vnitřní třída.
+        // To funguje nejen pro sbírky, funguje to pro všechny
+        // ne finální třídy.
 
     } // End main method
 } // End LearnJava class
